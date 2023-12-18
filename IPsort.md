@@ -9,8 +9,8 @@ Write a program that reads IP addresses and displays them in ascending order usi
 The first line contains the number n, then n lines with IP addresses.
 
 
-## Input example:
-
+### Input example:
+```bash
 123.199.44.25  
 123.199.201.245  
 145.198.168.93  
@@ -23,15 +23,16 @@ The first line contains the number n, then n lines with IP addresses.
 179.67.181.62  
 179.67.212.111  
 177.67.10.90  
-
+```
 
     
-Output:
+## Output:
 
 List of IP addresses sorted by decimal notation.
 
         
-#Example output
+### Example output
+```bash
 45.8.106.59
 123.199.44.25
 123.199.201.245
@@ -44,6 +45,7 @@ List of IP addresses sorted by decimal notation.
 179.67.181.62
 179.67.212.111
 203.13.32.156
+```
 
 
 
