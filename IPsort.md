@@ -2,8 +2,8 @@
 
 Write a program that reads IP addresses and displays them in ascending order using decimal notation. To convert an address, for example 192.168.1.2, into a decimal number, use the formula:
 ```python
-192 * 256^3 + 168 * 256^2 + 1 * 256^1 + 2 * 256^0
-3232235778
+>>> 192 * 256**3 + 168 * 256**2 + 1 * 256**1 + 2 * 256**0
+    3232235778
 ```
 
 ## Input data:
