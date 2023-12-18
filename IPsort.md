@@ -47,14 +47,10 @@ List of IP addresses sorted by decimal notation.
 203.13.32.156
 ```
 
+## Solution
+- __Method 1__ – using ipaddress:
 
-
-
-    
-Solution
-Method 1 – using ipaddress:
-
-        
+```python        
 import ipaddress
 n = int(input())
 spisok = []
@@ -63,20 +59,21 @@ for i in range(n):
      spisok.append(temp)
 sortedkey = sorted(spisok, key = ipaddress.IPv4Address)
 print(*sortedkey, sep='\n')
-    
+```  
 
     
-Method 2:
+- __Method 2__:
 
-        
+```python   
 print(*sorted([input() for _ in range(int(input()))], key=lambda x: [*map(int, x.split('.'))]), sep='\ n')
-    
+```    
 
     
-Method 3:
+- __Method 3__:
 
-        
+```python        
 def decFormat(ip):
      return sum(map(lambda x, y: int(x) * 256 ** y, ip.split('.'), (3, 2, 1, 0)))
 ips = [input() for _ in range(int(input()))]
 print(*sorted(ips, key = decFormat), sep = '\n')
+```
